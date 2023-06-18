@@ -1,0 +1,5 @@
+LastMonthBetAmount,LastWeekBetAmount,YesterdayBetAmount,LastSixMonthsBetAmount,MonthBeforeLastMonthBetAmount,ThisMonthBetAmount,TotalBetAmount,TotalDeposit,LastMonthDeposit,YesterdayDeposit,LastWeekDeposit,LastSixMonthsDeposit,MonthBeforeLastMonthDeposit,LastMonthGGR,LastSixMonthsGGR,LastWeekGGR,MonthBeforeLastMonthGGR,ThisMonthGGR,YesterdayGGR,LastMonthBonusWagered,LastSixMonthsBonusWagered,LastWeekBonusWagered,MonthBeforeLastMonthBonusWagered,TotalBonusWagered,YesterdayBonusWagered,LastMonthNGR,LastSixMonthsNGR,LastWeekNGR,MonthBeforeLastMonthNGR,ThisMonthNGR,TotalNGR,YesterdayNGR
+0,0,integer between 50 and 100,0,0,0,0,0,0,0,0,0,0,,0,,0,0,4465,0,0,,0,0,106,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+,,between 200 and 300,,,,,,,between 20 and 30,,,,,,,,,,,,,,,,,,,,,,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,between 10 and 20,0,0,0,0,0,0,between 30 and 60
