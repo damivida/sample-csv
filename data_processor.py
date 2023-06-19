@@ -14,24 +14,23 @@ class DataProcessor:
         for col in self.starts_with_columns:
             self.data_frame[col] = self.fake.random_int(min=0, max=100)
 
-    def generate_date_column(self):
+    def generate_record_created(self):
+
+        # generate record created for first data frame
         data_range = pd.date_range(start=self.start_date, periods=len(self.data_frame))
         self.data_frame["recordCreated"] = data_range
 
-    def create_new_dataframe(self):
+        # create new data frame
         new_data_frame = pd.DataFrame(columns=self.data_frame.columns)
         last_date = self.data_frame.iloc[-1]["recordCreated"]
         new_date_range = pd.date_range(last_date, end=date.today())
         new_data_frame["recordCreated"] = new_date_range
 
-        for col in self.starts_with_columns:
-            new_data_frame[col] = self.fake.random_int(min=0, max=100)
-
+        # concat two data frames
         self.data_frame = pd.concat([self.data_frame, new_data_frame], ignore_index=True)
 
     def proces_data(self):
+        self.generate_record_created()
         self.add_fake_values()
-        self.generate_date_column()
-        self.create_new_dataframe()
         print(self.data_frame)
         self.data_frame.to_csv("new_csv.csv")

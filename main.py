@@ -42,6 +42,7 @@ from data_processor import DataProcessor
 
 
 # OOP approach
-processor = DataProcessor("SampleCSV - RawData.csv", "Yesterday", date(2019, 1, 1))
+processor = DataProcessor("SampleCSV - RawData.csv", "Yesterday", datetime(year=2019, month=1, day=1,
+                                                                           hour=12, minute=0, second=0))
 processor.proces_data()
 
